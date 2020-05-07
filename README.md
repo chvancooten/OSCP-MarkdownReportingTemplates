@@ -30,7 +30,7 @@ pandoc --print-default-data-file reference.docx > custom-reference.docx
 
 Edit the styles embedded in the document as desired to determine how Pandoc will generate your report. 
 
-> Don't overlook the many important styles styles (such as "source code") that are hidden, you can see the full overview by clicking the "box-with-arrow" on the bottom right of the styling section in Word, and edit the styles from there.
+> Don't overlook the many important styles (such as "source code") that are hidden, you can see the full overview by clicking the "box-with-arrow" on the bottom right of the styling section in Word, and edit the styles from there.
 
 ### Generating intermediate .docx report
 
@@ -44,14 +44,16 @@ pandoc "Example Report _ No Styling.md" -o output.docx --highlight-style=tango -
 
 ### Finalizing the report 
 
-The pandoc reference document covers a lot of the styling, but not everything that I wanted to. As such, I adapted the following manually to ensure that the output document is nice and sleek:
+The pandoc reference document covers a lot of the styling, but not everything that I wanted it to. As such, I adapted the following manually to ensure that the output document is nice and sleek:
 
 - Title page formatting
 - Table of contents
 - Page numbering
 - Image Sizes
-  - Some images come out really big, depending on the aspect ratio of the original image. This could be solved by using something like `![my caption](./figures/myimage.png){ width=250px }` in your original MarkDown file, but I just went through to manually resize images to the right size.
+  - Since Pandoc renders images at page width by default, some images come out really big depending on the aspect ratio of the original image. This could be solved by using something like `![my caption](./figures/myimage.png){ width=250px }` in your original MarkDown file, but I prefer going through to manually resize images to the right size.
+
+Of course, this is up to your preference! At this point you can tweak your styles or formatting as you desire.
 
 ### Exporting PDF
 
-OffSec expects your report in PDF format. This shouldn't be much of a hurdle though.
+OffSec expects your report in PDF format. Generating that from Word shouldn't be much of a hurdle though. ;)
