@@ -1,5 +1,7 @@
 # OSCP / PWK Markdown Reporting Templates and Pandoc Reference Style
 
+I wrote [a blog post](https://casvancooten.com/posts/2020/05/generating-pretty-pwk-reports-with-pandoc-and-markdown-templates-inside/) on how to use these templates to easily generate pretty reports with little effort.
+
 This repo contains the templates I used for OSCP / PWK lab and exam reporting, as well as the basic styles I used to convert the markdown report to a (relatively) slick-looking and organized report, while preserving code formatting and syntax highlighting. To achieve this I generate the PDF based on an intermediary Word file generated through Pandoc.
 
 The repo also contains some [examples](https://github.com/chvancooten/OSCP-MarkdownReportingTemplates/tree/master/Examples) to show what a report may come to look like. Note that the final conversion to Word from PDF does require some manual styling work (which is actually what I personally preferred). Since I obviously cannot disclose any PWK lab or exam writeups, I've used some VulnHub writeups as filler instead. Don't open the example report if you don't want spoilers for `Brainpan`, `Kioptrix2014`, `Zico`, or `LazyAdmin`. 🙃
